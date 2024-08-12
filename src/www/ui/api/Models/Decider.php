@@ -153,19 +153,19 @@ class Decider
    */
   public function getArray($version=ApiVersion::V2)
   {
-    if($version == ApiVersion::V1){
-      return [
-        "nomos_monk"  => $this->nomosMonk,
-        "bulk_reused" => $this->bulkReused,
-        "new_scanner" => $this->newScanner,
-        "ojo_decider" => $this->ojoDecider
-      ];
-    }else{
+    if($version == ApiVersion::V2){
       return [
         "nomosMonk"  => $this->nomosMonk,
         "bulkReused" => $this->bulkReused,
         "newScanner" => $this->newScanner,
         "ojoDecider" => $this->ojoDecider
+      ];
+    }else{
+      return [
+        "nomos_monk"  => $this->nomosMonk,
+        "bulk_reused" => $this->bulkReused,
+        "new_scanner" => $this->newScanner,
+        "ojo_decider" => $this->ojoDecider
       ];
     }
 
