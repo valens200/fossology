@@ -36,7 +36,6 @@ class ui_diff_buckets extends FO_Plugin
   {
     global $PG_CONN;
     if (empty($PG_CONN)) { return(1); } /* No DB */
-
     return(0);
   } // Install()
 
