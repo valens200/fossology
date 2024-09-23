@@ -528,6 +528,4 @@ class FolderDaoTest extends \PHPUnit\Framework\TestCase
     $this->assertNOtNull($parent);
     $this->assertEquals(4, $parent);
   }
-
-
 }
